@@ -211,7 +211,7 @@ img {
 
 /* Features */
 
-.features.container .item + .item {
+.features.container .features-item + .features-item {
   margin-left: 30px;
 }
 
@@ -248,6 +248,16 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.features-item::before {
+  display: inline-block;
+  width: 270px;
+  content: '';
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--secondary-bg-color);
+  border-radius: 4px;
 }
 
 /* Activity */
