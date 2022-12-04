@@ -5,7 +5,8 @@
   --accent-color: #2196f3;
   --white-color: #ffffff;
   --black-color: #000000;
-  --hero-and-footer-bg-color: #2f303a;
+  --hero-bg-color: #c4c4c4;
+  --footer-bg-color: #2f303a;
   --secondary-bg-color: #f5f4fa;
   --btn-active-bg-color: #188ce8;
   --border-line-color: #ececec;
@@ -164,9 +165,15 @@ img {
 }
 
 .hero {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 200px 0;
   text-align: center;
-  background-color: var(--hero-and-footer-bg-color);
+  background-color: var(--hero-bg-color);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/heroimg.jpg);
 }
 
 /* Button */
@@ -306,7 +313,7 @@ img {
 
 /* Стилі для футеру */
 .footer {
-  background-color: var(--hero-and-footer-bg-color);
+  background-color: var(--footer-bg-color);
 }
 
 .footer.container {
