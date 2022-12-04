@@ -149,6 +149,25 @@ img {
   color: var(--accent-color);
 }
 
+.icon-envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.icon-smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.item .link {
+  display: flex;
+  align-items: center;
+}
+
 /* Стилі для index.html */
 /* Hero */
 .hero-title {
@@ -204,6 +223,7 @@ img {
   background-color: var(--btn-active-bg-color);
 }
 
+/* Section */
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
