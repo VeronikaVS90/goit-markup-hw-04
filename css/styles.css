@@ -11,7 +11,7 @@
   --btn-active-bg-color: #188ce8;
   --border-line-color: #ececec;
   --border-card-color: #eeeeee;
-  --border-clients-color: #afb1b8;
+  --icon-current-color: #afb1b8;
   --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   --primary-btn-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -347,16 +347,30 @@ img {
 
 .team-link {
   display: flex;
+  margin-top: 16px;
   width: 44px;
   height: 44px;
-  border: 1px solid black;
+  border-radius: 50%;
   align-items: center;
   justify-content: center;
+  color: var(--icon-current-color);
+  background-color: var(--white-color);
 }
 
 .team-icon {
   width: 20px;
   height: 20px;
+  fill: currentColor;
+}
+
+.team-networks .list-networks + .list-networks {
+  margin-left: 10px;
+}
+
+.team-link:hover,
+.team-link:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
 }
 
 /* Clients */
@@ -366,17 +380,13 @@ img {
   justify-content: center;
   width: 170px;
   height: 92px;
-  border: 1px solid var(--border-clients-color);
+  border: 1px solid var(--icon-current-color);
   border-radius: 4px;
 }
 
 .clients-icon {
   padding: 16px 32px;
-  fill: var(--border-clients-color);
-}
-
-.foster {
-  fill: var(--border-clients-color);
+  fill: var(--icon-current-color);
 }
 
 .clients.container .clients-item + .clients-item {
@@ -461,6 +471,7 @@ img {
 .footer-icon {
   width: 20px;
   height: 20px;
+  fill: var(--icon-current-color);
 }
 
 .join-list {
