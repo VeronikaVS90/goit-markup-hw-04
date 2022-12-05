@@ -271,14 +271,20 @@ img {
   letter-spacing: 0.03em;
 }
 
-.features-item::before {
-  display: inline-block;
+.features-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.thumb {
+  display: flex;
   width: 270px;
-  content: '';
   height: 120px;
   margin-bottom: 30px;
   background-color: var(--secondary-bg-color);
   border-radius: 4px;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Activity */
