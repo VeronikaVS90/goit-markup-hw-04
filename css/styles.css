@@ -11,6 +11,7 @@
   --btn-active-bg-color: #188ce8;
   --border-line-color: #ececec;
   --border-card-color: #eeeeee;
+  --border-clients-color: #afb1b8;
   --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   --primary-btn-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -334,6 +335,38 @@ img {
 }
 
 /* Clients */
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--border-clients-color);
+  border-radius: 4px;
+}
+
+.clients-icon {
+  padding: 16px 32px;
+  fill: var(--border-clients-color);
+}
+
+.foster {
+  fill: var(--border-clients-color);
+}
+
+.clients.container .clients-item + .clients-item {
+  margin-left: 30px;
+}
+
+.clients-icon:hover,
+.clients-icon:focus {
+  fill: var(--accent-color);
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--accent-color);
+}
 
 /* Стилі для футеру */
 .footer {
