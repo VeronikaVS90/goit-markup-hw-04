@@ -12,6 +12,7 @@
   --border-line-color: #ececec;
   --border-card-color: #eeeeee;
   --icon-current-color: #afb1b8;
+  --icon-bg-color: rgba(255, 255, 255, 0.1);
   --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   --primary-btn-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -408,10 +409,11 @@ img {
   background-color: var(--footer-bg-color);
 }
 
-.footer.container {
+.footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
   flex-direction: column;
+  margin-right: 70px;
 }
 
 .address-nav .item + .item {
@@ -466,16 +468,39 @@ img {
 
 .footer-thumb {
   display: flex;
+  flex-direction: column;
+  padding-top: 72px;
 }
 
 .footer-icon {
   width: 20px;
   height: 20px;
-  fill: var(--icon-current-color);
+  fill: currentColor;
 }
 
 .join-list {
   display: flex;
+}
+
+.footer-networks {
+  display: flex;
+  margin-top: 20px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  color: var(--white-color);
+  background-color: var(--icon-bg-color);
+}
+
+.footer-networks:hover,
+.footer-networks:focus {
+  background-color: var(--accent-color);
+}
+
+.join-list .footer-item + .footer-item {
+  margin-left: 10px;
 }
 
 /* Стилі для portfolio.html */
