@@ -340,6 +340,25 @@ img {
   text-align: center;
 }
 
+.team-networks {
+  display: flex;
+  justify-content: center;
+}
+
+.team-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-icon {
+  width: 20px;
+  height: 20px;
+}
+
 /* Clients */
 .clients-link {
   display: flex;
@@ -424,6 +443,28 @@ img {
 .link-secondary:hover,
 .link-secondary:focus {
   color: var(--accent-color);
+}
+
+.footer-join {
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer-thumb {
+  display: flex;
+}
+
+.footer-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.join-list {
+  display: flex;
 }
 
 /* Стилі для portfolio.html */
