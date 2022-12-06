@@ -187,7 +187,6 @@ img {
 
 .hero {
   max-width: 1600px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
   padding: 200px 0;
@@ -344,11 +343,11 @@ img {
 .team-networks {
   display: flex;
   justify-content: center;
+  margin-top: 16px;
 }
 
 .team-link {
   display: flex;
-  margin-top: 16px;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -383,35 +382,33 @@ img {
   height: 92px;
   border: 1px solid var(--icon-current-color);
   border-radius: 4px;
+  color: var(--icon-current-color);
 }
 
 .clients-icon {
-  padding: 16px 32px;
-  fill: var(--icon-current-color);
+  height: 60px;
+  width: 106px;
+  fill: currentColor;
 }
 
 .clients.container .clients-item + .clients-item {
   margin-left: 30px;
 }
 
-.clients-icon:hover,
-.clients-icon:focus {
-  fill: var(--accent-color);
-}
-
 .clients-link:hover,
 .clients-link:focus {
   border-color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 /* Стилі для футеру */
 .footer {
   background-color: var(--footer-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-container {
-  padding-top: 60px;
-  padding-bottom: 60px;
   flex-direction: column;
   margin-right: 70px;
 }
@@ -469,7 +466,7 @@ img {
 .footer-thumb {
   display: flex;
   flex-direction: column;
-  padding-top: 72px;
+  align-items: baseline;
 }
 
 .footer-icon {
@@ -480,11 +477,12 @@ img {
 
 .join-list {
   display: flex;
+  margin-top: 20px;
 }
 
 .footer-networks {
   display: flex;
-  margin-top: 20px;
+
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -557,13 +555,20 @@ img {
   margin-bottom: 0;
 }
 
-.flex-element:hover {
+.image-link {
+  display: block;
+}
+
+.image-link:hover,
+.image-link:focus {
   box-shadow: var(--prtf-card-shadow);
 }
 
 .card-content {
   padding: 24px 20px;
-  border: 1px solid var(--border-card-color);
+  border-bottom: 1px solid var(--border-card-color);
+  border-right: 1px solid var(--border-card-color);
+  border-left: 1px solid var(--border-card-color);
 }
 
 .image-title {
